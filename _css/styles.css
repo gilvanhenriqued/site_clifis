@@ -8,7 +8,7 @@ body {
 .logos img{
     /* Quando aparecem 4 valores, diz respeito a top, right, down e left */
     position: initial;
-    margin: 0px 15px 20px 70px;
+    margin: 0px 15px 30px 85px;
 }
 
 .navbar {
@@ -40,6 +40,10 @@ main {
     margin: 30px;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 main p {
     text-align: justify;
 }
@@ -50,6 +54,12 @@ aside {
 
 @media (min-width: 991px) {
     .navbar-brand {
+        display: none;
+    }
+ }
+
+ @media (max-width: 500px) {
+    .logo_if {
         display: none;
     }
  }
