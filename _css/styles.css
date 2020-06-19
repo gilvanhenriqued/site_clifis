@@ -5,12 +5,13 @@ body {
     width: 100%;
 }
 
+/* Ajustando o posicionamento das logos no header */
 .logos img{
-    /* Quando aparecem 4 valores, diz respeito a top, right, down e left */
     position: initial;
     margin-bottom: 25px;
 }
 
+/* Ajustando o posicionamento dos elementos da navbar para space-around e center */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -18,56 +19,71 @@ body {
     align-items: center;
 }
 
+/* Definindo tamanho da fonte do navbar discreto superior */
 .navbar-light a {
     font-size: 15px;
     color: black;
 }
 
+/* Definindo cor e borda inferior da navbar principal */
 .navbar-dark {
     background-color: #368536;
     border-bottom: solid 2px #d23637;
 }
 
+/* Definindo tamanho da fonte e espaçamento lateral entre os itens da navbar principal */
 .nav-item {
     font-size: 18px;
+    /* Quando aparecer 4 valores no margin, diz respeito,
+    respectivamente à margem top, right, down e left */
     margin: 0 8px 0 8px;
 }
 
+/* Definindo cor verde escura para quando o mouse passa por cima de um nav-item */
+/* :hover define uma ação para quando o mouse passa pelo elemento */
 .navbar-dark .nav-item:hover {
     background-color: rgb(9, 82, 9);
 } 
 
+/* Ajustando margem do conteúdo principal da página */
 main {
     margin: 30px;
 }
 
+/* Tamanho da fonte dos títulos */
 h1 {
     font-size: 35px;
 }
 
+/* Justificando os textos que estiverem no main */
 main p {
     text-align: justify;
 }
 
+/* Ajustando responsividade para a imagem lateral */
 aside {
     width: 100%;
 }
 
+/* Definindo os links com cor preta ao invés do azul padrão */
 a {
     color: #000000;
 }
 
+/* Definindo cor cinza para quando o mouse passa por cima de uma linha da tabela */
 tbody tr:hover {
     background-color: rgb(238, 236, 236);
 }
 
+/* Ajustando responsividade da navbar quando a tela fica pequena (menor que 991px) */
 @media (min-width: 991px) {
     .navbar-brand {
         display: none;
     }
  }
 
- @media (max-width: 767px) {
+/* Faz a logo do IF sumir quando a tela fica pequena */
+@media (max-width: 767px) {
     .logo_if {
         display: none;
     }
